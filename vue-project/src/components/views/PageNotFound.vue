@@ -1,8 +1,6 @@
-<script>
-
-</script>
-
 <template>
+    
+    <main>
         
         <div class="pt-72">
 
@@ -20,4 +18,10 @@
 
         </div>
 
+    </main>
+
 </template>
+
+<script>
+
+</script>

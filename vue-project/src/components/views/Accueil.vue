@@ -1,10 +1,6 @@
-<script>
-
-</script>
-
 <template>
 
-    <div>
+    <main>
 
         <!-- Icon Bilel -->
         <div class="flex justify-center mb-5 mt-10 items-center">
@@ -20,7 +16,7 @@
         
         </div>
 
-    </div>
+    </main>
 
 </template>
 
