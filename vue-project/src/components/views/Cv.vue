@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <template>
 
     <div class="text-orange-500 flex justify-center">
@@ -5,3 +9,4 @@
     </div>
 
 </template>
+

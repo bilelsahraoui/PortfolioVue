@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AOS from 'aos';
 import App from './App.vue';
 import Cv from './components/views/Cv.vue';
-import Home from './components/views/Home.vue';
+import Accueil from './components/views/Accueil.vue';
 import About from './components/views/About.vue';
 import Veille from './components/views/Veille.vue';
 import Projets from './components/views/Projets.vue';
@@ -13,9 +13,9 @@ import PageNotFound from './components/views/PageNotFound.vue';
 
 const routes = [
     {
-        name: 'Home',
+        name: 'Accueil',
         path: '/',
-        component: Home,
+        component: Accueil,
     },
     {
         name: 'CV',
