@@ -1,11 +1,17 @@
 <template>
 
-  <div class="flex justify-center mb-5 items-center">
+  <!-- Icon Bilel -->
+  <div class="flex justify-center mb-5 mt-10 items-center">
+
     <BilelIcon></BilelIcon>
+  
   </div>
 
-  <div class="text-blue-500 flex justify-center">
-    Je suis la page Home
+  <!-- Message Bienvenue -->
+  <div class="flex justify-center">
+
+    <p class="text-lg text-blue-500"> Bienvenue sur mon Portfolio ! </p>
+  
   </div>
     
 </template>

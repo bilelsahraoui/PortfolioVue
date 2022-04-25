@@ -1,9 +1,10 @@
 import './assets/base.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from "vue-router";
+import AOS from 'aos';
 import App from './App.vue';
+import Cv from './components/views/Cv.vue';
 import Home from './components/views/Home.vue';
 import About from './components/views/About.vue';
 import Veille from './components/views/Veille.vue';
@@ -15,6 +16,11 @@ const routes = [
         name: 'Home',
         path: '/',
         component: Home,
+    },
+    {
+        name: 'CV',
+        path: '/cv',
+        component: Cv,
     },
     {
         name: 'About',
