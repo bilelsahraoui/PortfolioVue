@@ -2,6 +2,7 @@
 
     <main class="min-h-full" :class="isDark ? 'dark':''">
 
+        <!-- Main div -->
         <div class="dark:bg-slate-700">
             
             <!-- Icon Bilel -->
@@ -16,7 +17,17 @@
 
                 <p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#42d392] to-[#5f8bee]"> 
 
-                Bienvenue sur mon Portfolio ! 
+                    Bienvenue sur mon Portfolio ! 
+                
+                </p>
+
+            </div>
+
+            <div class="flex text-sm justify-center items-center">
+
+                <p class="dark:text-slate-300">
+
+                    Vous retrouverez ici mon parcours, mes compétences
                 
                 </p>
 
@@ -25,19 +36,12 @@
             <div class="flex text-sm justify-center items-center dark:text-slate-300 ">
 
                 <p>
-                    Vous retrouverez ici mon parcours, mes compétences
+                    ainsi que mes créations en tant que développeur Full-Stack
                 </p>
 
             </div>
 
-            <div class="flex text-sm justify-center items-center dark:text-slate-300 ">
-
-                <p>
-                    ainsi que mes créations.
-                </p>
-
-            </div>
-
+            <!-- Footer -->
             <div class="flex justify-center items-center">
                 
                 <div class="pt-[297px] pb-5">

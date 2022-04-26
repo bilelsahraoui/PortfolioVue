@@ -1,4 +1,5 @@
 <template>
+
   <main class="min-h-full" :class="isDark ? 'dark':''">
     <!-- Navbar -->
     <div class="bg-transparent pt-5 pb-5 dark:bg-slate-800 dark:text-slate-300">
@@ -12,11 +13,13 @@
         </div>
 
         <!-- Routes -->
-        <router-link to="/" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Accueil</p></router-link>
-        <router-link to="/cv" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">CV</p></router-link>
-        <router-link to="/projets" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Projets</p></router-link>
-        <router-link to="/veille-informationnelle" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Veille Informationnelle</p></router-link>
-        <router-link to="/a-propos" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">A propos</p></router-link>
+        <div class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full" v-for="route in routes" :key="route.name">
+        <router-link :to="`${route.link}`"><p class="mx-4">{{route.name}}</p></router-link>
+        </div>
+        <!-- <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">CV</p></router-link>
+        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Projets</p></router-link>
+        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Veille Informationnelle</p></router-link>
+        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">A propos</p></router-link> -->
 
         <!-- Dark/Light Mode -->
         <button @click="isDark=!isDark" class="rounded-full">
@@ -55,6 +58,28 @@ let sysPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
 export default {
   data(){
     return{
+      routes: [
+        {
+          name: 'Accueil',
+          link: '/',
+        },
+        {
+          name: 'CV',
+          link: '/cv',
+        },
+        {
+          name: 'Projets',
+          link: '/projets',
+        },
+        {
+          name: 'Veille Informationnelle',
+          link: '/veille-informationnelle',
+        },
+        {
+          name: 'A propos',
+          link: '/a-propos',
+        },
+      ],
       isDark:sysPref,
     }
   },
