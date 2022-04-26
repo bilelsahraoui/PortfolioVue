@@ -2,10 +2,6 @@ import './assets/base.css';
 import 'aos/dist/aos.css';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from "vue-router";
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
 import AOS from 'aos';
 import App from './App.vue';
 import Cv from './components/views/Cv.vue';
@@ -14,8 +10,6 @@ import About from './components/views/About.vue';
 import Veille from './components/views/Veille.vue';
 import Projets from './components/views/Projets.vue';
 import PageNotFound from './components/views/PageNotFound.vue';
-
-library.add(fas, far);
 
 const routes = [
     {
@@ -55,4 +49,4 @@ const router = createRouter({
     routes,
 });
 
-createApp(App).component('fa', FontAwesomeIcon).use(router).mount('#app')
+createApp(App).use(router).mount('#app')
