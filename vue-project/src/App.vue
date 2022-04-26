@@ -1,45 +1,70 @@
 <template>
+  <main class="min-h-full" :class="isDark ? 'dark':''">
+    <!-- Navbar -->
+    <div class="bg-transparent pt-5 pb-5 dark:bg-slate-800 dark:text-slate-300">
 
-  <!-- Navbar -->
-  <div class="bg-transparent pt-5 pb-5">
+      <!-- Navbar content -->
+      <div class="flex justify-evenly items-center dark:text-white-">
 
-    <!-- Navbar content -->
-    <div class="flex justify-evenly items-center dark:text-white-">
+        <!-- Logo Bilel -->
+        <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+          <img src="./assets/logo-bs.svg" alt="logo bilel sahraoui">
+        </div>
 
-      <!-- Logo Bilel -->
-      <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-        <img src="./assets/logo-bs.svg" alt="logo bilel sahraoui">
+        <!-- Routes -->
+        <router-link to="/" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Accueil</p></router-link>
+        <router-link to="/cv" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">CV</p></router-link>
+        <router-link to="/projets" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Projets</p></router-link>
+        <router-link to="/veille-informationnelle" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Veille Informationnelle</p></router-link>
+        <router-link to="/a-propos" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">A propos</p></router-link>
+
+        <!-- Dark/Light Mode -->
+        <button @click="isDark=!isDark" class="rounded-full">
+          <div v-if="isDark" class="h-12 w-12">
+            <img src='./assets/sun.svg' />
+          </div>
+          <div v-else class="h-12 w-12">
+            <img src='./assets/moon.svg' />
+          </div>
+        </button>
+
+      <!-- Fin content -->
       </div>
 
-      <!-- Routes -->
-      <router-link to="/" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Accueil</p></router-link>
-      <router-link to="/cv" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">CV</p></router-link>
-      <router-link to="/projets" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Projets</p></router-link>
-      <router-link to="/veille-informationnelle" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Veille Informationnelle</p></router-link>
-      <router-link to="/a-propos" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">A propos</p></router-link>
-
-    <!-- Fin content -->
+    <!-- Fin Navbar -->
     </div>
 
-  <!-- Fin Navbar -->
-  </div>
+    <!-- Router View -->
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
 
-  <!-- Router View -->
-  <router-view v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
-      <component :is="Component"></component>
-    </transition>
-  </router-view>
+  </main>
 
 </template>
 
-<script setup lang="ts">
+<script>
 
 import { onMounted } from "vue";
 import AOS from "aos";
 
-onMounted(() => {
+let sysPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+export default {
+  data(){
+    return{
+      isDark:sysPref,
+    }
+  },
+  setup(){
+    onMounted(() => {
     AOS.init();
-})
+  })
+    return{
+    }
+  }
+}
 
 </script>

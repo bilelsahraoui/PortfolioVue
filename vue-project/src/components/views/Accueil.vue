@@ -1,28 +1,47 @@
 <template>
 
-    <main>
+    <main class="min-h-full" :class="isDark ? 'dark':''">
 
-        <!-- Icon Bilel -->
-        <div class="flex justify-center mb-5 mt-10 items-center">
+        <div class="dark:bg-slate-700 min-h-screen">
+            
+            <!-- Icon Bilel -->
+            <div class="flex justify-center mb-5 mt-1 items-center">
 
-            <BilelIcon></BilelIcon>
-  
-        </div>
+                <BilelIcon></BilelIcon>
+    
+            </div>
 
-        <!-- Message de Bienvenue -->
-        <div class="flex justify-center items-center">
+            <!-- Message de Bienvenue -->
+            <div class="flex justify-center items-center">
 
-            <p class="text-lg text-blue-500"> Bienvenue sur mon Portfolio ! </p>
-        
+                <p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#42d392] to-[#5f8bee]"> 
+
+                Bienvenue sur mon Portfolio ! 
+                
+                </p>
+
+            </div>
+
         </div>
 
     </main>
 
 </template>
 
-<script setup>
+<script>
 
 import BilelIcon from '../icons/bilelIcon.vue';
+
+export default {
+    data() {
+        return {
+            username: 'Visiteur',
+            // isDark: window.matchMedia('(prefers-color-scheme: dark)').matches,
+        };
+    },
+    components: { BilelIcon },
+    
+}
 
 </script>
 

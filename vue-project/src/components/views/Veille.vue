@@ -1,6 +1,6 @@
 <template>
 
-    <main>
+    <main class="min-h-full" :class="isDark ? 'dark':''">
 
         <div class="flex text-purple-500 justify-center">
         
