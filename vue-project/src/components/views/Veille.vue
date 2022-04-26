@@ -9,7 +9,7 @@
             <div>
 
                 <!-- Titre -->
-                <div class="flex text-lg font-extrabold justify-center dark:text-slate-300 pt-5 italic" id="cybersecurite">
+                <div class="flex text-lg font-extrabold justify-center dark:text-slate-300 pt-5 italic">
                     La Cyber-Sécurité
                 </div>
 
@@ -52,10 +52,10 @@
                 <!-- Images -->
                 <div class="grid grid-cols-2 place-content-evenly">
                 
-                    <div class="py-10 justify-center min-w-xl items-center flex rounded-md" data-aos="zoom-in" v-for="image in htb" :key="image.id">
+                    <div class="py-10 justify-center items-center flex rounded-md" data-aos="zoom-in" v-for="image in htb" :key="image.id">
 
-                            <!-- img -->
-                            <img class="aspect-video w-8/12 rounded-lg object-cover object-center" :src="`../../images/${image.img}`" />
+                        <!-- img -->
+                        <img class="aspect-video w-8/12 rounded-lg object-cover object-center" :src="`../../images/${image.img}`" />
 
                     </div>
 
@@ -83,7 +83,7 @@
                 </div>
 
                 <!-- Images -->
-                <div class="py-10 justify-center min-w-xl items-center flex rounded-md" data-aos="flip-up">
+                <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
                     <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="images/htb3.png" />
@@ -108,7 +108,7 @@
                 </div>
 
                 <!-- Images -->
-                <div class="py-10 justify-center min-w-xl items-center flex rounded-md" data-aos="flip-up">
+                <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
                     <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="images/htb4.png" />
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="flex justify-center text-xl items-center dark:text-slate-300">
-                    <a href="#cybersecurite">Revenir en haut ↑ </a>
+                    <a href="#nav">Revenir en haut ↑ </a>
                 </div>
 
             </div>

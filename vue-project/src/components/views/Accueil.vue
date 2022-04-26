@@ -41,6 +41,8 @@
 
             </div>
 
+            <!-- Design responsive en cours de travail -->
+
             <!-- Footer -->
             <div class="flex justify-center items-center">
                 
@@ -66,8 +68,6 @@ import Footer from '../objects/footer.vue';
 export default {
     data() {
         return {
-            username: 'Visiteur',
-            // isDark: window.matchMedia('(prefers-color-scheme: dark)').matches,
         };
     },
     components: { BilelIcon, Footer },

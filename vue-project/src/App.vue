@@ -1,25 +1,22 @@
 <template>
 
   <main class="min-h-full" :class="isDark ? 'dark':''">
+
     <!-- Navbar -->
-    <div class="bg-transparent pt-5 pb-5 dark:bg-slate-800 dark:text-slate-300">
+    <div class="bg-transparent pt-5 pb-5 dark:bg-slate-800 dark:text-slate-300" id="nav">
 
       <!-- Navbar content -->
       <div class="flex justify-evenly items-center dark:text-white-">
 
         <!-- Logo Bilel -->
-        <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+        <div>
           <img src="./assets/logo-bs.svg" alt="logo bilel sahraoui">
         </div>
 
         <!-- Routes -->
         <div class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full" v-for="route in routes" :key="route.name">
-        <router-link :to="`${route.link}`"><p class="mx-4">{{route.name}}</p></router-link>
+          <router-link :to="`${route.link}`"><p class="mx-4">{{route.name}}</p></router-link>
         </div>
-        <!-- <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">CV</p></router-link>
-        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Projets</p></router-link>
-        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">Veille Informationnelle</p></router-link>
-        <router-link :to="`${route.link}`" class="hover:bg-gradient-to-r from-[#42d392] to-[#5f8bee] rounded-full"><p class="mx-4">A propos</p></router-link> -->
 
         <!-- Dark/Light Mode -->
         <button @click="isDark=!isDark" class="rounded-full">
@@ -76,7 +73,7 @@ export default {
           link: '/veille-informationnelle',
         },
         {
-          name: 'A propos',
+          name: 'À propos',
           link: '/a-propos',
         },
       ],

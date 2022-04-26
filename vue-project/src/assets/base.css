@@ -16,7 +16,11 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+
+    overflow-x: hidden;
 }
+
+
 
 .fade-enter-active,
 .fade-leave-active {
