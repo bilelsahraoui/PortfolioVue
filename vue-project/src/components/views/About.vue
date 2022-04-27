@@ -1,6 +1,6 @@
 <template>
 
-    <main class="min-h-full" :class="isDark ? 'dark':''">
+    <main class="min-h-screen" :class="isDark ? 'dark':''">
 
         <!-- Main div -->
         <div class="dark:bg-slate-700">
@@ -157,7 +157,7 @@
             <!-- Footer -->
             <div class="flex justify-center items-center">
                 
-                <div class="pt-3 pb-5">
+                <div class="pt-3">
                 
                     <Footer></Footer>
                 

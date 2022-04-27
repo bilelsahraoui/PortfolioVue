@@ -1,6 +1,6 @@
 <template>
 
-    <main class="min-h-full" :class="isDark ? 'dark':''">
+    <main class="min-h-screen" :class="isDark ? 'dark':''">
 
         <!-- Main div -->
         <div class="dark:bg-slate-700">
@@ -48,9 +48,9 @@
             <!-- Design responsive en cours de travail -->
 
             <!-- Footer -->
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center static items-center">
                 
-                <div class="pt-[297px] pb-5">
+                <div class="pt-3 absolute bottom-0">
                 
                     <Footer></Footer>
                 
