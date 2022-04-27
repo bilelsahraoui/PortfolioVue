@@ -3,7 +3,7 @@
     <div>
 
         <img
-            class="rounded-full h-48 mt-28"
+            class="rounded-full h-48"
             src="/images/bilel.jpg"
             alt="Icon de bilel"
         />

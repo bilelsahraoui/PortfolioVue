@@ -90,7 +90,7 @@ export default {
             {
                 id: 3,
                 name: 'Site bonbons',
-                description: "Une application web permettant d'acheter des bonbons",
+                description: "Une application web permettant d'acheter des bonbons, réalisé en 1ère année de BTS",
                 img: 'bonbons.jpg',
                 github: 'https://github.com/bilelsahraoui/Bonbons2021',
             },

@@ -10,7 +10,9 @@
 
                 <!-- Titre -->
                 <div class="flex text-lg font-extrabold justify-center dark:text-slate-300 pt-5 italic">
-                    La Cyber-Sécurité
+                    <p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#42d392] to-[#5f8bee]"> 
+                        La Cyber-Sécurité 
+                    </p>
                 </div>
 
                 <!-- Contenu -->
@@ -52,7 +54,7 @@
                 <!-- Images -->
                 <div class="grid grid-cols-2 place-content-evenly">
                 
-                    <div class="py-10 justify-center items-center flex rounded-md" data-aos="zoom-in" v-for="image in htb" :key="image.id">
+                    <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-down" v-for="image in htb" :key="image.id">
 
                         <!-- img -->
                         <img class="aspect-video w-8/12 rounded-lg object-cover object-center" :src="`../../images/${image.img}`" />
@@ -86,7 +88,7 @@
                 <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
-                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="images/htb3.png" />
+                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="/images/htb3.png" />
 
                 </div>
 
@@ -111,7 +113,7 @@
                 <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
-                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="images/htb4.png" />
+                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="/images/htb4.png" />
 
                 </div>
 

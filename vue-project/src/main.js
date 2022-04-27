@@ -18,8 +18,8 @@ const routes = [
         component: Accueil,
     },
     {
-        name: 'CV',
-        path: '/cv',
+        name: 'CV & Compétences',
+        path: '/cv-competences',
         component: Cv,
     },
     {

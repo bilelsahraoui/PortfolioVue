@@ -10,7 +10,7 @@
 
                 <p class="text-xl pt-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#42d392] to-[#5f8bee]"> 
 
-                    A propos de moi
+                    À propos de moi
                 
                 </p>
 
@@ -29,7 +29,7 @@
             <div class="flex text-sm justify-center items-center dark:text-slate-300">
 
                 <p>
-                    au Lycée Polyvalent de Cachan, je souhaite continuer mes études en master
+                    au Lycée Polyvalent de Cachan, je souhaite continuer mes études en Master
                 </p>
 
             </div>

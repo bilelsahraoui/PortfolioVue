@@ -8,8 +8,12 @@
             <!-- Icon Bilel -->
             <div class="flex justify-center mb-5 items-center">
 
-                <BilelIcon></BilelIcon>
-    
+                <div class="mt-28">
+                    
+                    <BilelIcon></BilelIcon>
+                
+                </div>
+            
             </div>
 
             <!-- Message de Bienvenue -->
