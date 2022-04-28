@@ -40,9 +40,9 @@
             <!-- Design responsive en cours de travail -->
 
             <!-- Footer -->
-            <div class="flex justify-center static items-center">
+            <div class="flex justify-center items-center">
                 
-                <div class="pt-3 pb-10 absolute bottom-0">
+                <div class="pb-5 pt-10">
                 
                     <Footer></Footer>
                 
