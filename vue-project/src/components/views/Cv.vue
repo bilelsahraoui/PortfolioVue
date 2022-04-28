@@ -17,13 +17,17 @@
             </div>
 
             <!-- Icon PDF -->
-            <div class="dark:bg-slate-700 flex pt-3 justify-center items-center dark:text-slate-300">
-
-                Si vous souhaitez consulter mon CV, il est disponible ici : 
+            <div class="dark:bg-slate-700 flex pt-3 justify-center items-center dark:text-slate-300 md:text-red-500">
+                
+                <p class="mx-10 text-center">
+                
+                    Si vous souhaitez consulter mon CV, il est disponible ici : 
+                
+                </p>
             
             </div>
 
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center mt-5 items-center">
 
                 <CVPDF></CVPDF>
 
@@ -40,7 +44,7 @@
 
             </div>
 
-            <div class="grid grid-cols-4 gap-3 pt-10 items-center rounded-lg text-white">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 pt-10 items-center rounded-lg text-white mx-3">
 
                 <div class="flex justify-center mb-3 items-center" v-for="competence in competences" :key="competence.id">
 
@@ -99,7 +103,6 @@
 
                 </div>
 
-            <!-- </div> -->
 
             <!-- Footer -->
             <div class="flex justify-center items-center">
@@ -122,6 +125,7 @@
 
 import CVPDF from '../icons/cv-pdf.vue';
 import Footer from '../objects/footer.vue';
+import Navbar from '../objects/navbar.vue';
 
 export default {
     data() {

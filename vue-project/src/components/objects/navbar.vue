@@ -1,17 +1,15 @@
 <template>
+    
+<div class="dark:bg-slate-700">
 
-  <main class="min-h-full" :class="isDark ? 'dark':''">
-
-    <div class="dark:bg-slate-700">
-
-      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800" id="nav">
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
 
         <div class="container flex flex-wrap justify-between items-center mx-auto">
 
           <!-- Logo Bilel -->
           <div>
 
-            <img src="./assets/logo-bs.svg" alt="logo bilel sahraoui">
+            <img src="../../assets/logo-bs.svg" alt="logo bilel sahraoui">
           
           </div>
 
@@ -55,10 +53,10 @@
           <!-- Dark/Light Mode -->
           <button @click="isDark=!isDark" class="rounded-full md:ml-10">
             <div v-if="isDark" class="h-12 w-12">
-              <img src='./assets/sun.svg' />
+              <img src='../../assets/sun.svg' />
             </div>
             <div v-else class="h-12 w-12">
-              <img src='./assets/moon.svg' />
+              <img src='../../assets/moon.svg' />
             </div>
           </button>
         
@@ -68,62 +66,42 @@
 
     </nav>
 
-      <!-- Router View -->
-      <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component"></component>
-        </transition>
-      
-      </router-view>
+</div>
 
-    </div>
-
-  </main>
 
 </template>
 
 <script>
 
-import { onMounted } from "vue";
-import AOS from "aos";
-
-let sysPref = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
 export default {
-  data(){
-    return{
-      routes: [
-        {
-          name: 'Accueil',
-          link: '/',
-        },
-        {
-          name: 'CV & Compétences',
-          link: '/cv-competences',
-        },
-        {
-          name: 'Projets',
-          link: '/projets',
-        },
-        {
-          name: 'Veille Informationnelle',
-          link: '/veille-informationnelle',
-        },
-        {
-          name: 'À propos',
-          link: '/a-propos',
-        },
-      ],
-      isDark:sysPref,
+    data() {
+        return {
+
+        routes: [
+            {
+            name: 'Accueil',
+            link: '/',
+            },
+            {
+            name: 'CV & Compétences',
+            link: '/cv-competences',
+            },
+            {
+            name: 'Projets',
+            link: '/projets',
+            },
+            {
+            name: 'Veille Informationnelle',
+            link: '/veille-informationnelle',
+            },
+            {
+            name: 'À propos',
+            link: '/a-propos',
+            },
+        ],
+        isDark: window.matchMedia('(prefers-color-scheme: dark)').matches,
+        };
     }
-  },
-  setup(){
-    onMounted(() => {
-    AOS.init();
-  })
-    return{
-    }
-  }
 }
 
 </script>

@@ -29,18 +29,10 @@
 
             <div class="flex text-sm justify-center items-center">
 
-                <p class="dark:text-slate-300">
+                <p class="mx-10 text-center dark:text-slate-300">
 
-                    Vous retrouverez ici mon parcours, mes compétences
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center dark:text-slate-300 ">
-
-                <p>
-                    ainsi que mes créations en tant que développeur Full-Stack
+                    Vous retrouverez ici mon parcours, mes compétences ainsi que mes créations <br>
+                    en tant que développeur Full-Stack
                 </p>
 
             </div>
@@ -50,7 +42,7 @@
             <!-- Footer -->
             <div class="flex justify-center static items-center">
                 
-                <div class="pt-3 absolute bottom-0">
+                <div class="pt-3 pb-10 absolute bottom-0">
                 
                     <Footer></Footer>
                 

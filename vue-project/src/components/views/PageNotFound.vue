@@ -2,6 +2,7 @@
     
     <main class="min-h-screen" :class="isDark ? 'dark':''">
         
+        
         <!-- Contenu de la page -->
         <div class="dark:bg-slate-700 pt-72">
 
@@ -15,7 +16,7 @@
             <!-- Message -->
             <div class="flex justify-center place-items-center">
 
-                <p class="text-lg dark:text-slate-400">La page que vous avez demandé n'existe pas</p>
+                <p class="mx-3 text-center text-lg dark:text-slate-400">La page que vous avez demandé n'existe pas</p>
 
             </div>
 

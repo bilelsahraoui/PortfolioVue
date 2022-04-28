@@ -2,6 +2,8 @@
 
     <main class="min-h-screen" :class="isDark ? 'dark':''">
 
+        
+
         <!-- Main div -->
         <div class="dark:bg-slate-700">
 
@@ -18,26 +20,11 @@
 
             <div class="flex text-sm justify-center items-center pt-6">
 
-                <p class="dark:text-slate-300">
+                <p class="mx-3 text-center dark:text-slate-300">
 
-                    Actuellement étudiant en BTS SIO (Services Informatique aux Organisations) 
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center dark:text-slate-300">
-
-                <p>
-                    au Lycée Polyvalent de Cachan, je souhaite continuer mes études en Master
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center dark:text-slate-300 pb-10">
-
-                <p>
-                    dans le développement Web après l'obtention de mon diplôme.
+                    Actuellement étudiant en BTS SIO (Services Informatique aux Organisations)
+                    au Lycée Polyvalent de Cachan, je <br> 
+                    souhaite continuer mes études en Master dans le développement Web après l'obtention de mon diplôme.
                 </p>
 
             </div>
@@ -55,48 +42,12 @@
 
             <div class="flex text-sm justify-center items-center pt-6">
 
-                <p class="dark:text-slate-300">
+                <p class="mx-3 text-center dark:text-slate-300">
 
-                    Dans le but de commencer mes études supérieures avec des bases en programmation,
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center">
-
-                <p class="dark:text-slate-300">
-
-                    j'ai choisi de faire une Terminale STMG option SIG (SYSTEME D'INFORMATION ET DE GESTION).
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center">
-
-                <p class="dark:text-slate-300">
-
-                    Après l'obtention de mon BAC, j'ai continué vers un BTS SIO (Services Informatiques aux Organisations).
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center">
-
-                <p class="dark:text-slate-300">
-
-                    Je suis actuellement sur la fin de ma 2ème année de BTS.
-                
-                </p>
-
-            </div>
-
-            <div class="flex text-sm justify-center items-center pb-10">
-
-                <p class="dark:text-slate-300">
-
+                    Dans le but de commencer mes études supérieures avec des bases en programmation, <br>
+                    j'ai choisi de faire une Terminale STMG option SIG (SYSTEME D'INFORMATION ET DE GESTION). <br>
+                    Après l'obtention de mon BAC, j'ai continué vers un BTS SIO (Services Informatiques aux Organisations). <br>
+                    Je suis actuellement sur la fin de ma 2ème année de BTS. <br>
                     Après l'obtention de celui-ci, je souhaite continuer vers un master en tant que développeur web full-stack.
                 
                 </p>

@@ -17,15 +17,11 @@
 
                 <!-- Contenu -->
                 <div class="flex justify-center items-center dark:text-slate-300 pt-2">
-                    <p>De nos jours, la plupart des choses qui nous entourent sont informatisés, que ça soit : </p>
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    <p>les voitures, les systèmes de gestion (banque, impôts, ..), montres, et même les guerres. </p>
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    <p> Au vu de tous les appareils connectés de nos jours, il est devenu nécessaire de se protéger soi et ses données.</p>
+                    <p class="mx-10 text-center">
+                        De nos jours, la plupart des choses qui nous entourent sont informatisés, que ça soit : <br>
+                        les voitures, les systèmes de gestion, montres, et même les guerres. <br>
+                        Au vu de tous les appareils connectés de nos jours, il est devenu nécessaire de se protéger soi et ses données.
+                    </p>
                 </div>
 
                 <!-- HTB -->
@@ -40,24 +36,20 @@
 
                 <!-- Contenu -->
                 <div class="flex justify-center items-center pt-3 dark:text-slate-300">
-                    HackTheBox est un site internet proposant des cours, des exercices ainsi qu'une
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    communauté dédiée à la Cyber-Sécurité. Le but des exercices est de récupérer un "flag"
-                </div>
-                
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    contenant un long code de caractères aléatoires, récupérable en réussissant le test d'intrusion.
+                    <p class="mx-10 text-center">
+                        HackTheBox est un site internet proposant des cours, des exercices ainsi qu'une <br>
+                        communauté dédiée à la Cyber-Sécurité. Le but des exercices est de récupérer un "flag" <br>
+                        contenant un long code de caractères aléatoires, récupérable en réussissant le test d'intrusion.
+                    </p>
                 </div>
 
                 <!-- Images -->
                 <div class="grid grid-cols-2 place-content-evenly">
                 
-                    <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-down" v-for="image in htb" :key="image.id">
+                    <div class="py-10 justify-center mx-2 items-center flex rounded-md" data-aos="flip-down" v-for="image in htb" :key="image.id">
 
                         <!-- img -->
-                        <img class="aspect-video w-8/12 rounded-lg object-cover object-center" :src="`../../images/${image.img}`" />
+                        <img class="aspect-video md:w-8/12 rounded-lg object-cover object-center" :src="`../../images/${image.img}`" />
 
                     </div>
 
@@ -69,26 +61,19 @@
                 </div>
 
                 <div class="flex justify-center items-center pt-3 dark:text-slate-300">
-                    Dans le but de former et de prévenir des cybers-risques, HackTheBox a
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    mis en place une structure s'appelant HackTheBox Academy.
-                </div>
-                
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    Cette structure donne des cours, des conseils ainsi qu'un accès à une grande
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    communauté de passionnés. Ils proposent également une certification.
+                    <p class="mx-10 text-center">
+                        Dans le but de former et de prévenir des cybers-risques, HackTheBox a <br>
+                        mis en place une structure s'appelant HackTheBox Academy. <br>
+                        Cette structure donne des cours, des conseils ainsi qu'un accès à une grande <br>
+                        communauté de passionnés. Ils proposent également une certification.
+                    </p>
                 </div>
 
                 <!-- Images -->
                 <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
-                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="/images/htb3.png" />
+                    <img class="aspect-video mx-2 w-2/3 md:w-1/3 rounded-lg object-cover object-center" src="/images/htb3.png" />
 
                 </div>
 
@@ -98,22 +83,18 @@
                 </div>
 
                 <div class="flex justify-center items-center pt-3 dark:text-slate-300">
-                    J'ai personnellement un anglais assez bien développé pour suivre ces cours en ligne et facilement comprendre.
-                </div>
-
-                <div class="flex justify-center items-center dark:text-slate-300">
-                   J'ai à ce jour terminé les 3/4 des machines disponibles au niveau débutant et continue d'en apprendre de jours
-                </div>
-                
-                <div class="flex justify-center items-center dark:text-slate-300">
-                    en jours afin d'obtenir la satisfaction d'avoir réussi un test d'intrusion & dans l'espoir de passer la certification.
+                    <p class="mx-10 text-center">
+                        J'ai personnellement un anglais assez bien développé pour suivre ces cours en ligne et facilement comprendre. <br>
+                        J'ai à ce jour terminé les 3/4 des machines disponibles au niveau débutant et continue d'en apprendre de jours <br>
+                        en jours afin d'obtenir la satisfaction d'avoir réussi un test d'intrusion & dans l'espoir de passer la certification.
+                    </p>
                 </div>
 
                 <!-- Images -->
                 <div class="py-10 justify-center items-center flex rounded-md" data-aos="flip-up">
 
                     <!-- img -->
-                    <img class="aspect-video w-1/3 rounded-lg object-cover object-center" src="/images/htb4.png" />
+                    <img class="aspect-video mx-2 w-2/3 md:w-1/3 rounded-lg object-cover object-center" src="/images/htb4.png" />
 
                 </div>
 

@@ -8,7 +8,7 @@
             <!-- Projets div -->
             <div class="justify-center items-center flex">
 
-                <div class="grid grid-cols-2 gap-3 place-content-evenly w-3/4 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 place-content-evenly w-3/4 rounded-lg">
 
                     <!-- Boucle Projets -->
                     <div class="py-10 justify-center min-w-xl items-center flex rounded-md" v-for="projet in projets" :key="projet.id">
