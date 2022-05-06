@@ -18,7 +18,7 @@
                 <!-- Contenu -->
                 <div class="flex justify-center items-center dark:text-slate-300 pt-2">
                     <p class="mx-10 text-center">
-                        De nos jours, la plupart des choses qui nous entourent sont informatisés, que ça soit : <br>
+                        De nos jours, la plupart des choses qui nous entourent sont informatisées, que ça soit : <br>
                         les voitures, les systèmes de gestion, montres, et même les guerres. <br>
                         Au vu de tous les appareils connectés de nos jours, il est devenu nécessaire de se protéger soi et ses données.
                     </p>

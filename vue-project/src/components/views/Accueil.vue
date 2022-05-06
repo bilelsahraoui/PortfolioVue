@@ -37,8 +37,6 @@
 
             </div>
 
-            <!-- Design responsive en cours de travail -->
-
             <!-- Footer -->
             <div class="flex justify-center items-center">
                 
