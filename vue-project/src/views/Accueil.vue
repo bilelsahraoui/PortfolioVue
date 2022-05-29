@@ -46,10 +46,6 @@
                 </div>
         
             </div>
-
-            <div class="dark:bg-slate-700 pb-56 md:pb-60">
-
-            </div>
     
         </div>
 

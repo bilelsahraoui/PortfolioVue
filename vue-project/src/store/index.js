@@ -6,7 +6,8 @@ const store = createStore({
         meteo: {
             data: {}
         },
-        isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
+        // isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
+        isDark: false
     },
     //Commit
     mutations: {
@@ -21,7 +22,7 @@ const store = createStore({
     actions: {
         async fetchMeteo ({ commit }, wantedCity){
             try{
-                const response = await axios.get('http://api.weatherapi.com/v1/current.json?key=1fc3ef42de5a47bf982220310222605&q='+wantedCity+'&aqi=no')
+                const response = await axios.get('https://api.weatherapi.com/v1/current.json?key=1fc3ef42de5a47bf982220310222605&q='+wantedCity+'&aqi=no')
                 .then((response) => {
                     const meteo = response.data;
                     commit('setMeteo', meteo);

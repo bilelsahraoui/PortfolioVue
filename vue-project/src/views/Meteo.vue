@@ -67,7 +67,11 @@
                     </div>
                 </div>
 
-                <Footer></Footer>
+            <p class="text-lg text-black flex justify-center py-5">
+        
+            © Sahraoui Bilel - 2022 
+        
+            </p>
 
             </div>
         </PageComponent>
@@ -89,7 +93,7 @@ export default {
         }
     },
     mounted(){
-      axios.get('http://api.weatherapi.com/v1/current.json?key=1fc3ef42de5a47bf982220310222605&q='+this.wantedCity+'&aqi=no')
+      axios.get('https://api.weatherapi.com/v1/current.json?key=1fc3ef42de5a47bf982220310222605&q='+this.wantedCity+'&aqi=no')
       .then(res => res.data)
       .then(data => {
         this.$store.state.meteo.data = data;

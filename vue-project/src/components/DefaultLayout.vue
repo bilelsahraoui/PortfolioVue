@@ -1,6 +1,6 @@
 <template>
 
-  <div class="" :class="isDark ? 'dark':''">
+  <div class="dark:bg-red-700" :class="isDark ? 'dark':''">
 
     <div class="dark:bg-slate-700">
 
@@ -53,14 +53,14 @@
           </ul>
 
           <!-- Dark/Light Mode -->
-          <button @click="isDark=!isDark" class="rounded-full md:ml-10">
+          <!--<button @click="isDark=!isDark" class="rounded-full md:ml-10">
             <div v-if="isDark" class="h-12 w-12">
               <img src='../assets/sun.svg' />
             </div>
             <div v-else class="h-12 w-12">
               <img src='../assets/moon.svg' />
             </div>
-          </button>
+          </button>-->
         
         </div>
       
