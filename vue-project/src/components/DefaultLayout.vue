@@ -53,7 +53,7 @@
           </ul>
 
           <!-- Dark/Light Mode -->
-          <!--<button @click="isDark=!isDark" class="rounded-full md:ml-10">
+          <!--<button @click="this.isDark =! this.isDark" class="rounded-full md:ml-10">
             <div v-if="isDark" class="h-12 w-12">
               <img src='../assets/sun.svg' />
             </div>
@@ -100,15 +100,15 @@ const navigation = [
 export default {
   components: {
     Footer,
-},
+  },
   data(){
     return{
-      isDark: this.$store.state.isDark
+      // isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
     }
   },
-  setup(){
-    return{
-      navigation
+  setup() {
+    return {
+      navigation,
     }
   },
 }

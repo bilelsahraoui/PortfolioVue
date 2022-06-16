@@ -6,17 +6,12 @@ const store = createStore({
         meteo: {
             data: {}
         },
-        // isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
-        isDark: false
     },
     //Commit
     mutations: {
         setMeteo(state, data){
             state.meteo.data = data;
         },
-        setIsDark(state, bool){
-            state.isDark = bool;
-        }
     },
     //Dispatch
     actions: {
@@ -32,14 +27,6 @@ const store = createStore({
                 console.log(err)
             }
         },
-        setIsDark({ commit }, bool){
-            try{
-                commit('setIsDark', bool)
-            }
-            catch(err){
-                console.log(err)
-            }
-        }
 
     },
     getters: {

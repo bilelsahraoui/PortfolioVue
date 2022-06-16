@@ -113,10 +113,6 @@
         
             </div>
 
-            <div class="dark:bg-slate-700 pb-32 md:pb-30">
-
-            </div>
-
         </div>
 
     </main>

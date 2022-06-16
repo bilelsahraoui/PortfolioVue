@@ -93,13 +93,20 @@ export default {
             },
             {
                 id: 4,
+                name: 'Flouflix',
+                description: "Flouflix est une imitation de Netflix, récuperant ses données depuis l'API The Movie Database",
+                img: 'flouflix.png',
+                github: 'https://github.com/bilelsahraoui/Flouflix',
+            },
+            {
+                id: 5,
                 name: 'Portfolio',
                 description: 'Portfolio actuel, réalisé via le framework Vue.js & Tailwind css',
                 img: 'vue.png',
                 github: 'https://github.com/bilelsahraoui/PortfolioVue',
             },
             {
-                id: 5,
+                id: 6,
                 name: 'Site bonbons',
                 description: "Une application web permettant d'acheter des bonbons, réalisé en 1ère année de BTS",
                 img: 'bonbons.jpg',

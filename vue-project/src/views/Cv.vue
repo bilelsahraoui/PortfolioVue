@@ -170,20 +170,35 @@ export default {
                     name: 'Python',
                     img: 'python.png',
                 },
+                {
+                    id: 9,
+                    name: 'React.js',
+                    img: 'react.png',
+                },
+                {
+                    id: 10,
+                    name: 'Laravel',
+                    img: 'laravel.png',
+                },
+                {
+                    id: 11,
+                    name: 'Tailwind CSS',
+                    img: 'tailwind.jpg',
+                },
+                {
+                    id: 12,
+                    name: 'Three.js',
+                    img: 'three.png',
+                }
 
             ],
 
             apprentissage: [
                 {
                     id: 1,
-                    name: 'React.js',
-                    img: 'react.png',
-                },
-                {
-                    id: 2,
-                    name: 'Laravel',
-                    img: 'laravel.png',
-                },
+                    name: 'Nuxt.js',
+                    img: 'nuxt.png',
+                }
             ],
         };
     },
